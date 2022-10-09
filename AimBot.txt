@@ -1,0 +1,17 @@
+https://se7en.ws/games/
+
+[ Make AimBot ]
+
+1. Position { الموقع الحالي للجميع }
+2. LocalPlayer => { الموقع الحالي لشخصيتنا } 
+3. View angles { x , y }  => { عرض زوايا ذراع الملعب لدينا } X => { الالتفاف { 0 To 360 } } Y => { 0 To -90 }
+4. HealthPoints => { استهداف الدم للأعداء }
+
+fuongshin:
+Ainbot()
+{
+  GetLocalPlayer(); => { x,y,z اللاعب المحلي }
+  GetPlayers(); => { الحصول على اللاعبين }
+  Sort(); => { أقرب لاعب }
+  Aim(Players[0]); => { أستهداف أقرب لاعب }
+}
